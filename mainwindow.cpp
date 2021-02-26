@@ -1,3 +1,5 @@
+#include <QTimer>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -13,6 +15,11 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::autoStart() {
+    ui->spinRounds->setValue(10);
+    QTimer::singleShot(1000, this, SLOT(runButtonPressed()));
 }
 
 void MainWindow::resetButtonPressed() {

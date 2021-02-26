@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     qsrand(time(NULL));
     setbuf(stdout,NULL);
     w.show();
+    w.autoStart();
 
     return a.exec();
 }

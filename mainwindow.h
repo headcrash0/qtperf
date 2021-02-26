@@ -21,6 +21,7 @@ public:
 public slots:
     void runButtonPressed();
     void resetButtonPressed();
+    void autoStart();
 
 private:
     Ui::MainWindow *ui;
