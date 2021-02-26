@@ -1,4 +1,8 @@
+#ifdef USE_QT5
+#include <QtWidgets/QApplication>
+#else
 #include <QtGui/QApplication>
+#endif
 #include "mainwindow.h"
 #include "time.h"
 

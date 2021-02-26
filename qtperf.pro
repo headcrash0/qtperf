@@ -6,7 +6,12 @@
 
 QT       += core gui
 
-TARGET = qtperf4
+greaterThan(QT_MAJOR_VERSION, 4) {
+  QT      += widgets
+  DEFINES += USE_QT5
+}
+
+TARGET = qtperf
 TEMPLATE = app
 
 
